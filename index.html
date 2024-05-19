@@ -1,62 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página - Módulo I - Primeiros Passos com HTML</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a.external::after {
+            content: "\1F517";
+        }
+    </style>
 </head>
 <body>
     <h1>Módulo 1 - Primeiros Passos com HTML</h1>
     <hr />
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
+    <h2 id="index">Índice</h2>
     <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
+        <li><a href="#history-of-computers">História dos computadores</a></li>
+        <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li><a href="#html">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#ul-ol">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#refs">Links de referências</a></li>
     </ul>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="history-of-computers" >História dos computadores</h2>
+    <p>
+        Os primeiros computadores começaram a surgir nos anos 40. A 1ª geração foi composta pelos computadores <strong><a href="https://pt.wikipedia.org/wiki/Harvard_Mark_I" target="_blank" class="external">Havard Mark I</a></strong> (1944), <strong><a href="https://pt.wikipedia.org/wiki/Colossus_(computador)" target="_blank" class="external">Colossus</a></strong> (1944) e <strong><a href="https://pt.wikipedia.org/wiki/ENIAC" target="_blank" class="external">ENIAC</a></strong> (1945), que eram enormes devido à tecnologia da época. Com a criação dos transistores, surgiu a 2ª geração (1959 a 1965), que ajudou drasticamente a reduzir o tamanho dos computadores. Na 3ª geração (1965 a 1970), foram criados os circuitos integrados, que incluíam transistores, capacitores e resistores. Hoje em dia, estamos na 4ª geração com os computadores modernos e avançando para a 5ª geração.
+    </p>
+    <a href="#index" style="color: rgb(60, 0, 255);"><small>(Voltar)</small></a>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="clients">O que são <i>Clients</i>?</h2>
+    <p>
+        <a href="https://pt.wikipedia.org/wiki/Cliente_(computa%C3%A7%C3%A3o)" target="_blank" class="external"><strong>Client</strong></a> é tudo aquilo que está do lado do "cliente", ou seja, o dispositivo que consome um serviço, seja um site, aplicativo ou <abbr title="application programming interface">API</abbr>. O client utiliza a internet ou um host local para fazer solicitações ao <a href="#servers"><strong>Servidor</strong></a> e também para receber informações. Dessa forma, ele traduz visualmente as informações recebidas do servidor para o dispositivo do "cliente". No geral, o client pode ser um navegador, um dispositivo móvel, ou até mesmo uma TV.
+    </p>
+    <a href="#index" style="color: rgb(60, 0, 255);"><small>(Voltar)</small></a>
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="servers">O que são <i>Servers</i>?</h2>
+    <p>
+        <a href="https://pt.wikipedia.org/wiki/Servidor" target="_blank" class="external"><strong>Server ou Servidor</strong></a> é responsável por armazenar, processar e distribuir informações, arquivos, serviços, etc. Como mencionado no conceito de <a href="#clients"><strong>Client</strong></a>, o servidor desempenha o papel de enviar e armazenar informações ou arquivos solicitados pelo Cliente. Cada servidor desempenha funções diferentes dependendo do serviço requisitado. Alguns tipos de servidores são: Servidor Web, servidor de E-mail, servidor de Arquivos, servidor firewall, Servidor de Streaming, etc.
+    </p>
+    <a href="#index" style="color: rgb(60, 0, 255);"><small>(Voltar)</small></a>
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="html">Como é uma estrutura básica de um HTML?</h2>
+    <p>
+        A estrutura de um documento <abbr title="HyperText Markup Language"><a href="https://pt.wikipedia.org/wiki/HTML" target="_blank" class="external"><strong>HTML</strong></a></abbr> é inicialmente formada pela tag <a href="https://www.w3schools.com/tags/tag_html.asp" target="_blank" class="external"><strong>&lt;html&gt;</strong></a>, que abre o elemento HTML. Em seguida, temos a tag <a href="https://www.w3schools.com/tags/tag_head.asp" target="_blank" class="external"><strong>&lt;head&gt;</strong></a>, que contém os metadados e informações sobre o documento <abbr title="HyperText Markup Language">HTML</abbr>. Esta seção é destinada a informações que não são diretamente exibidas para os usuários finais (<a href="#clients">Clients</a>), mas são importantes para que o navegador ou outros dispositivos possam processar o documento.
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+        <br><br>Dentro do elemento <u>&lt;head&gt;</u>, existem diversas tags, como a tag <a href="https://www.w3schools.com/tags/tag_title.asp" target="_blank" class="external"><strong>&lt;title&gt;</strong></a>, que é responsável por definir o título da página, exibido na guia do navegador. Após ela, temos o <a href="https://www.w3schools.com/tags/tag_body.asp" target="_blank" class="external"><strong>&lt;body&gt;</strong></a>, que é o corpo principal do <abbr title="HyperText Markup Language">HTML</abbr>, onde todo o conteúdo visível da página é colocado. Ele contém todos os elementos que são exibidos para os usuários finais, como textos, imagens, links, vídeos, formulários, etc.
 
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
+
+        <br><br>Dentro do <u>&lt;body&gt;</u>, podemos utilizar várias tags, como:
+
+        <ul>
+            <li><strong>Tags de Títulos:</strong> <a href="https://www.w3schools.com/tags/tag_hn.asp" target="_blank" class="external"><i>&lt;h1&gt; - &lt;h6&gt;</i></a> para cabeçalhos de diferentes níveis.</li>
+            <li><strong>Parágrafos:</strong> <a href="https://www.w3schools.com/tags/tag_p.asp" target="_blank" class="external"><i>&lt;p&gt;</i></a> para parágrafos de texto.</li>
+            <li><strong>Links:</strong> <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank" class="external"><i>&lt;a&gt;</i></a> para criar links para outras páginas ou recursos.</li>
+            <li><strong>Imagens:</strong> <a href="https://www.w3schools.com/tags/tag_img.asp" target="_blank" class="external"><i>&lt;img&gt;</i></a> para exibir imagens na página.</li>
+            <li><strong>Listas:</strong> <a href="https://www.w3schools.com/tags/tag_ul.asp" target="_blank" class="external"><i>&lt;ul&gt;</i></a> para listas não ordenadas (com marcadores), <a href="https://www.w3schools.com/tags/tag_ol.asp" target="_blank" class="external"><i>&lt;ol&gt;</i></a> para listas ordenadas (numeradas) e <a href="https://www.w3schools.com/tags/tag_li.asp" target="_blank" class="external"><i>&lt;li&gt;</i></a> que são os itens da lista.</li>
+        </ul>
+
+        Essas são apenas algumas das muitas tags que podem ser utilizadas dentro do <u>&lt;body&gt;</u> para estruturar e apresentar o conteúdo de uma página <abbr title="HyperText Markup Language">HTML</abbr>.
+    </p>
+    <a href="#index" style="color: rgb(60, 0, 255);"><small>(Voltar)</small></a>
+
+    <h2 id="ul-ol">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+    <p>
+        Para explicar a diferença entre as listas ordenadas (<a href="https://www.w3schools.com/tags/tag_ol.asp" target="_blank" class="external"><strong>ol</strong></a>) e as não ordenadas (<a href="https://www.w3schools.com/tags/tag_ul.asp" target="_blank" class="external"><strong>ul</strong></a>), vamos começar com a lista ordenada. Elas são listas nas quais os itens são ordenados de acordo com uma sequência numérica ou alfabética, onde são automaticamente numerados em uma sequência crescente (1, 2, 3...) ou em ordem alfabética (a, b, c...), como podemos ver no exemplo a seguir:
+
+        <strong>
+            <ol>
+                <li>Item A</li>
+                <li>Item B</li>
+                <li>Item C</li>
+            </ol>
+        </strong>
+
+        Já no caso da <u>lista não ordenada</u>, elas são listas nas quais não há uma ordem específica, ou seja, os itens não fazem parte de uma sequência. Os itens são marcados com símbolos padrão, geralmente círculos ou quadrados, como podemos ver no exemplo a seguir:
+
+        <strong>
+            <ul>
+                <li>Item 1</li>
+                <li style="list-style-type: circle;">Item 2</li>
+                <li style="list-style-type: square;">Item 3</li>
+            </ul>
+        </strong>
+
+    </p>
+    <a href="#index" style="color: rgb(60, 0, 255);"><small>(Voltar)</small></a>
+
+    <h2 id="refs">Links de referências</h2>
     <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/Harvard_Mark_I" target="_blank" class="external">Harvard Mark I - Wikipedia</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/Colossus_(computador)" target="_blank" class="external">Colossus - Wikipedia</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/ENIAC" target="_blank" class="external">ENIAC - Wikipedia</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/Cliente_(computa%C3%A7%C3%A3o)" target="_blank" class="external">Clients - Wikipedia</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/Servidor" target="_blank" class="external">Servers - Wikipedia</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/HTML" target="_blank" class="external">HTML - Wikipedia</a></li>
+        <li><a href="https://www.w3schools.com/html/html_head.asp" target="_blank" class="external">HTML - W3C</a></li>
+        <li><a href="https://www.w3schools.com/tags/default.asp" target="_blank" class="external">Tags HTML - W3C</a></li>
     </ul>
+    <a href="#index" style="color: rgb(60, 0, 255);"><small>(Voltar)</small></a>
+    <br><br>
 
+    <footer>
+        <p>desenvolvido por <a href="https://github.com/guillxr" target="_blank"><strong>guillxr</strong></a> para o projeto <u>Criar Uma Página Web Utilizando as Tags Aprendidas</u> da <a href="https://www.dio.me/" target="_blank"><strong>DIO</strong></a></p>
+    </footer>
 </body>
 </html>
